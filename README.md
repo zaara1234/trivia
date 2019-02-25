@@ -2,7 +2,7 @@
 
 ## Project Description
 
-For this project we will be building a trivia app. This project will use firebase to fetch questions and react to diplay questions and answers.
+For this project we will be building a trivia app. This project will use firebase to fetch questions and react to diplay questions and answers. 
 
 ====
 
@@ -117,7 +117,7 @@ class App extends Component {
 
 ```
     firebaseDatabase.ref('/questions').on('value', (snapshot)=> {
-        lets questions = snaphot.val();
+        let questions = snapshot.val();
         let randomQuestion = getRandomQuestion(questions)
         this.setState({
             questions: questions,
@@ -125,8 +125,7 @@ class App extends Component {
         })
     });
 ```
-
-- [ ] Reload the page to see your conent change.
+- [ ] Reload the page to see your content change.
 
 ### Day 5 Reacting to user click
 
